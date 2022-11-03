@@ -23,9 +23,9 @@ public class LineCrossing : MonoBehaviour
     {
         List<GameObject> debugCircles = new List<GameObject>();
         GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
-        Vector2 position = new Vector2();
         
-        _intersections = 0;
+        Vector2 position = new Vector2();
+        int crossings = 0;
         
         foreach (Tuple<int, int> point in _combinations)
         {
@@ -38,11 +38,12 @@ public class LineCrossing : MonoBehaviour
 
             if (intersection)
             {
-                debugCircles.Add(Instantiate(debug, position, Quaternion.identity));
-                _intersections++;
+                //debugCircles.Add(Instantiate(debug, position, Quaternion.identity));
+                crossings++;
             }
         }
 
-        Debug.Log(_intersections / 2);
+        _intersections = crossings;
+        //Debug.Log(_intersections);
     }
 }
