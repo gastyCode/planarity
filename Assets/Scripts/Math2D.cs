@@ -36,7 +36,7 @@ public static class Math2D
         if (groupLength > elementsCount) throw new Exception("Wrong length of elements.");
         return FactorialOf(elementsCount) / (FactorialOf(groupLength) * FactorialOf(elementsCount - groupLength));
     }
-    
+
     public static bool IsLineIntersecting(Vector2 v1, Vector2 v2, Vector2 v3, Vector2 v4, out Vector2 intersection)
     {
         intersection = Vector2.zero;
@@ -51,7 +51,7 @@ public static class Math2D
         float u = ((v3.x - v1.x) * (v4.y - v3.y) - (v3.y - v1.y) * (v4.x - v3.x)) / d;
         float v = ((v3.x - v1.x) * (v2.y - v1.y) - (v3.y - v1.y) * (v2.x - v1.x)) / d;
 
-        if (u < 0.0f || u > 1.0f || v < 0.0f || v > 1.0f)
+        if (u < 0.1f || u > 0.9f || v < 0.1f || v > 0.9f)
         {
             return false;
         }

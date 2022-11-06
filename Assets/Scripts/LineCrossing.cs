@@ -21,29 +21,28 @@ public class LineCrossing : MonoBehaviour
 
     private void Update()
     {
-        List<GameObject> debugCircles = new List<GameObject>();
         GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
-        
-        Vector2 position = new Vector2();
+        List<Vector2> intersections = new List<Vector2>();
+
         int crossings = 0;
-        
+
         foreach (Tuple<int, int> point in _combinations)
         {
             Line firstLine = lines[point.Item1].GetComponent<Line>();
             Line secondLine = lines[point.Item2].GetComponent<Line>();
+            Vector2 position = new Vector2();
 
-            
+
             bool intersection = IsLineIntersecting(firstLine.GetAPosition(), firstLine.GetBPosition(),
                 secondLine.GetAPosition(), secondLine.GetBPosition(), out position);
 
             if (intersection)
             {
-                //debugCircles.Add(Instantiate(debug, position, Quaternion.identity));
                 crossings++;
             }
         }
-
+        
         _intersections = crossings;
-        //Debug.Log(_intersections);
+        UIController.Instance.score = _intersections;
     }
 }
