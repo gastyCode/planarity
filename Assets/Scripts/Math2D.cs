@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Random = System.Random;
 
 public static class Math2D
@@ -42,26 +43,37 @@ public static class Math2D
         intersection = Vector2.zero;
         
         float d = (v2.x - v1.x) * (v4.y - v3.y) - (v2.y - v1.y) * (v4.x - v3.x);
-
+    
         if (d == 0.0f)
         {
             return false;
         }
-
+    
         float u = ((v3.x - v1.x) * (v4.y - v3.y) - (v3.y - v1.y) * (v4.x - v3.x)) / d;
         float v = ((v3.x - v1.x) * (v2.y - v1.y) - (v3.y - v1.y) * (v2.x - v1.x)) / d;
-
-        if (u < 0.1f || u > 0.9f || v < 0.1f || v > 0.9f)
+    
+        if (u < 0.01f || u > 0.99f || v < 0.01f || v > 0.99f)
         {
             return false;
         }
-
+    
         intersection.x = v1.x + u * (v2.x - v1.x);
         intersection.y = v1.y + u * (v2.y - v1.y);
         
         return true;
     }
-    
+
+    public static bool IsBetween(Vector2 a, Vector2 b, Vector2 c)
+    {
+        bool isBetween = false;
+
+        Vector2 ab = b - a;
+        Vector2 ac = c - a;
+
+        if (Vector2.Dot(ab, ac) > 0f && ab.sqrMagnitude > ac.sqrMagnitude) isBetween = true;
+        return isBetween;
+    }
+
     public static List<Tuple<int, int>> GetCombinationsOfTwo(int elementsCount)
     {
         List<Tuple<int, int>> elements = new List<Tuple<int,int>>();
@@ -71,8 +83,9 @@ public static class Math2D
         while (i < allOptions)
         {
             Tuple<int, int> element = GetRandomTwoNumbers(elementsCount);
-
-            if (!elements.Contains(element))
+            Tuple<int, int> reverseElement = Tuple.Create(element.Item2, element.Item1);
+            
+            if (!elements.Contains(element) && !elements.Contains(reverseElement))
             {
                 elements.Add(element);
                 i++;

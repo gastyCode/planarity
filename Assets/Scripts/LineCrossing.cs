@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using static Math2D;
 
@@ -8,12 +10,12 @@ public class LineCrossing : MonoBehaviour
 {
     private int _intersections = 0;
     private List<Tuple<int, int>> _combinations;
-    public GameObject debug;
-    public bool debugMode;
+    private List<Vector2> _positions;
 
     private void Start()
     {
         _combinations = new List<Tuple<int, int>>();
+        _positions = new List<Vector2>();
         
         GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
         _combinations = GetCombinationsOfTwo(lines.Length);
@@ -22,9 +24,7 @@ public class LineCrossing : MonoBehaviour
     private void Update()
     {
         GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
-        List<Vector2> intersections = new List<Vector2>();
-
-        int crossings = 0;
+        _positions.Clear();
 
         foreach (Tuple<int, int> point in _combinations)
         {
@@ -38,11 +38,20 @@ public class LineCrossing : MonoBehaviour
 
             if (intersection)
             {
-                crossings++;
+                _positions.Add(position);
             }
         }
-        
-        _intersections = crossings;
+
+        _intersections = _positions.Count;
         UIController.Instance.score = _intersections;
+    }
+
+    private void OnDrawGizmos()
+    {
+        foreach (Vector2 position in _positions)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(position, 0.1f);
+        }
     }
 }

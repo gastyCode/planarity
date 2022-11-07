@@ -16,7 +16,7 @@ public class VertexGenerator : MonoBehaviour
         
         for (int i = 0; i < vertexCount; i++)
         {
-            Vector2 position = new Vector2(random.Next(-8, 8), random.Next(-4, 3));
+            Vector2 position = new Vector2(random.Next(-8, 8), random.Next(-3, 4));
             Instantiate(prefab,position, Quaternion.identity);
         }
     }
