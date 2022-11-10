@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3365509407094680334, guid: 322546ff5bc194947bb122be7dd94c8b, type: 3}
-  vertexCount: 5
+  vertexCount: 6
 --- !u!114 &454388326
 MonoBehaviour:
   m_ObjectHideFlags: 0
