@@ -411,7 +411,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &454388323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3365509407094680334, guid: 322546ff5bc194947bb122be7dd94c8b, type: 3}
+  lineGenerator: {fileID: 454388323}
   vertexCount: 6
 --- !u!114 &454388326
 MonoBehaviour:
@@ -678,6 +679,7 @@ MonoBehaviour:
   score: 0
   moves: 0
   time: 
+  timer: {fileID: 454388326}
 --- !u!1 &1074646091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1376,7 @@ GameObject:
   - component: {fileID: 1841755814}
   - component: {fileID: 1841755813}
   - component: {fileID: 1841755812}
+  - component: {fileID: 1841755815}
   m_Layer: 5
   m_Name: Switch
   m_TagString: Untagged
@@ -1445,10 +1448,34 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 454388321}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 454388325}
+        m_TargetAssemblyTypeName: VertexGenerator, Assembly-CSharp
+        m_MethodName: GenerateVertexes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1841755815}
+        m_TargetAssemblyTypeName: SwitchButton, Assembly-CSharp
+        m_MethodName: Switch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 454388326}
+        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+        m_MethodName: Run
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1495,3 +1522,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841755810}
   m_CullTransparentMesh: 1
+--- !u!114 &1841755815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841755810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517f0cec9f102be41b12c4182527a868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unclicked: {fileID: 21300000, guid: 5aa79340660d2194d981c43a6aad5377, type: 3}
+  clicked: {fileID: 21300000, guid: 729d1e6ffd9743443bcc1122af2eebde, type: 3}

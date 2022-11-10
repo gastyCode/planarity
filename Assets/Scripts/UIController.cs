@@ -13,6 +13,8 @@ public class UIController : MonoBehaviour
     [HideInInspector]public int score;
     [HideInInspector]public int moves;
     [HideInInspector]public String time = "00:00";
+
+    public Timer timer;
     
     public static UIController Instance { get; private set; }
 
@@ -33,6 +35,13 @@ public class UIController : MonoBehaviour
     {
         scoreText.text = score.ToString();
         movesText.text = moves.ToString();
-        timeText.text = time;
+        timeText.text = timer.GetTime();
+    }
+
+    public void Reset()
+    {
+        score = 0;
+        moves = 0;
+        timer.ResetTimer();
     }
 }
