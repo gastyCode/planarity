@@ -5,11 +5,11 @@ using System.Linq;
 using UnityEngine;
 using Random = System.Random;
 
-public class VertexGenerator : MonoBehaviour
+public class VertexesGenerator : MonoBehaviour
 {
     public GameObject prefab;
-    public LineGenerator lineGenerator;
-    public int vertexCount;
+    public LinesGenerator linesGenerator;
+    public int vertexesCount;
     
     // Start is called before the first frame update
     public void GenerateVertexes()
@@ -18,13 +18,13 @@ public class VertexGenerator : MonoBehaviour
         
         Random random = new Random();
         
-        for (int i = 0; i < vertexCount; i++)
+        for (int i = 0; i < vertexesCount; i++)
         {
             Vector2 position = new Vector2(random.Next(-8, 8), random.Next(-3, 4));
             Instantiate(prefab,position, Quaternion.identity);
         }
         
-        lineGenerator.CreateLines();
+        linesGenerator.CreateLines();
     }
 
     private void DestroyAllVertexes()

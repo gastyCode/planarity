@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6739095748650404272, guid: b93224ae59dba0d4fba590117698b0ae, type: 3}
-  lineCrossing: {fileID: 7769696483038150727, guid: 2b742e603a02c084f9f684f2cd7e56b3, type: 3}
+  linesCrossing: {fileID: 7769696483038150727, guid: 2b742e603a02c084f9f684f2cd7e56b3, type: 3}
 --- !u!4 &454388324
 Transform:
   m_ObjectHideFlags: 0
@@ -454,8 +454,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3365509407094680334, guid: 322546ff5bc194947bb122be7dd94c8b, type: 3}
-  lineGenerator: {fileID: 454388323}
-  vertexCount: 6
+  linesGenerator: {fileID: 454388323}
+  vertexesCount: 5
 --- !u!114 &454388326
 MonoBehaviour:
   m_ObjectHideFlags: 0
