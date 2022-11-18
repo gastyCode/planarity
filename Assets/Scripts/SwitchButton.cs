@@ -9,6 +9,9 @@ public class SwitchButton : MonoBehaviour
     public Sprite unclicked;
     public Sprite clicked;
 
+    public VertexesGenerator vertexesGenerator;
+    public Timer timer;
+
     private Image _button;
     private bool _isClicked = false;
     
@@ -27,5 +30,28 @@ public class SwitchButton : MonoBehaviour
     public void Switch()
     {
         _isClicked = !_isClicked;
+
+        if (_isClicked)
+        {
+            vertexesGenerator.GenerateVertexes();
+            timer.ResetTimer();
+            timer.Run();
+            UIController.Instance.moves = 0;
+        }
+        else
+        {
+            denyVertexesMovement();
+            timer.Stop();
+        }
+    }
+
+    private void denyVertexesMovement()
+    {
+        GameObject[] vertexes = GameObject.FindGameObjectsWithTag("Vertex");
+        
+        foreach (GameObject vertex in vertexes)
+        {
+            vertex.GetComponent<Vertex>().SetMovable(false);
+        }
     }
 }

@@ -14,11 +14,7 @@ public class LinesCrossing : MonoBehaviour
 
     private void Start()
     {
-        _combinations = new List<Tuple<int, int>>();
-        _positions = new List<Vector2>();
-        
-        GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
-        _combinations = GetCombinationsOfTwo(lines.Length);
+        StartCoroutine(LateStart(0.1f));
     }
 
     private void Update()
@@ -53,5 +49,15 @@ public class LinesCrossing : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawSphere(position, 0.1f);
         }
+    }
+
+    IEnumerator LateStart(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        _combinations = new List<Tuple<int, int>>();
+        _positions = new List<Vector2>();
+        
+        GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
+        _combinations = GetCombinationsOfTwo(lines.Length);
     }
 }

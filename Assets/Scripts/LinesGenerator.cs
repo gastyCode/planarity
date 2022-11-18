@@ -12,12 +12,10 @@ public class LinesGenerator : MonoBehaviour
 
     private GameObject _linesCrossing;
 
-    public void CreateLines()
+    public void CreateLines(int vertexesCount)
     {
         DestroyAllLines();
-        
-        GameObject[] vertexes = GameObject.FindGameObjectsWithTag("Vertex");
-        List<Tuple<int, int>> points = GetCombinationsOfTwo(vertexes.Length);
+        List<Tuple<int, int>> points = GetCombinationsOfTwo(vertexesCount);
 
         foreach (Tuple<int, int> point in points)
         {
@@ -27,19 +25,16 @@ public class LinesGenerator : MonoBehaviour
 
         _linesCrossing = Instantiate(linesCrossing);
     }
-    
+
     private void DestroyAllLines()
     {
         Destroy(_linesCrossing);
-        
+
         GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
 
-        if (lines.Length > 0)
+        foreach (GameObject line in lines.ToList())
         {
-            foreach (GameObject line in lines.ToList())
-            {
-                Destroy(line);
-            }
+            Destroy(line);
         }
     }
 }
