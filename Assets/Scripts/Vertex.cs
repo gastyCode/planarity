@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -8,6 +9,7 @@ public class Vertex : MonoBehaviour
 {
     private Vector3 _mousePositionOffset;
     private Vector3 _startPosition;
+    private Boolean _isMovable = true;
 
     private Vector3 GetMousePosition()
     {
@@ -16,14 +18,22 @@ public class Vertex : MonoBehaviour
     
     private void OnMouseDown()
     {
-        UIController.Instance.moves++;
+        if (_isMovable)
+        {
+            UIController.Instance.moves++;
         
-        _startPosition = gameObject.transform.position;
-        _mousePositionOffset = gameObject.transform.position - GetMousePosition();
+            _startPosition = gameObject.transform.position;
+            _mousePositionOffset = gameObject.transform.position - GetMousePosition();
+        }
     }
 
     private void OnMouseDrag()
     {
         transform.position = GetMousePosition() + _mousePositionOffset;
+    }
+
+    public void SetMovable(bool isMovable)
+    {
+        _isMovable = isMovable;
     }
 }
