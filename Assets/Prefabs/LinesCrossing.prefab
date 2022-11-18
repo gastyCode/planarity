@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6803025776210981811}
   - component: {fileID: 3696240538501039225}
   m_Layer: 0
-  m_Name: LineCrossing
+  m_Name: LinesCrossing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

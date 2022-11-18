@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static Math2D;
 
-public class LineCrossing : MonoBehaviour
+public class LinesCrossing : MonoBehaviour
 {
     private int _intersections = 0;
     private List<Tuple<int, int>> _combinations;

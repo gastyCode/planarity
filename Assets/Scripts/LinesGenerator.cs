@@ -5,12 +5,12 @@ using System.Linq;
 using UnityEngine;
 using static Math2D;
 
-public class LineGenerator : MonoBehaviour
+public class LinesGenerator : MonoBehaviour
 {
     public GameObject prefab;
-    public GameObject lineCrossing;
+    public GameObject linesCrossing;
 
-    private GameObject _lineCrossing;
+    private GameObject _linesCrossing;
 
     public void CreateLines()
     {
@@ -25,12 +25,12 @@ public class LineGenerator : MonoBehaviour
             line.SetLine(point.Item1, point.Item2);
         }
 
-        _lineCrossing = Instantiate(lineCrossing);
+        _linesCrossing = Instantiate(linesCrossing);
     }
     
     private void DestroyAllLines()
     {
-        Destroy(_lineCrossing);
+        Destroy(_linesCrossing);
         
         GameObject[] lines = GameObject.FindGameObjectsWithTag("Line");
 
