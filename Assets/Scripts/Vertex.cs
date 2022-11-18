@@ -2,13 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static LineCrossing;
+using static LinesCrossing;
 
 public class Vertex : MonoBehaviour
 {
-    public Color baseColor;
-    public Color collisionColor;
-    
     private Vector3 _mousePositionOffset;
     private Vector3 _startPosition;
 
@@ -19,8 +16,9 @@ public class Vertex : MonoBehaviour
     
     private void OnMouseDown()
     {
-        _startPosition = gameObject.transform.position;
+        UIController.Instance.moves++;
         
+        _startPosition = gameObject.transform.position;
         _mousePositionOffset = gameObject.transform.position - GetMousePosition();
     }
 
