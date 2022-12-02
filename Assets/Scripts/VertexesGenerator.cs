@@ -9,9 +9,9 @@ public class VertexesGenerator : MonoBehaviour
 {
     public GameObject prefab;
     public LinesGenerator linesGenerator;
+    // Pocet vertexov na vygenerovanie
     public int vertexesCount;
     
-    // Start is called before the first frame update
     public void GenerateVertexes()
     {
         DestroyAllVertexes();
@@ -24,7 +24,7 @@ public class VertexesGenerator : MonoBehaviour
             Instantiate(prefab,position, Quaternion.identity);
         }
         
-        linesGenerator.CreateLines(vertexesCount);
+        linesGenerator.CreateLines();
     }
 
     private void DestroyAllVertexes()
