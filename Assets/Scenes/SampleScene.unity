@@ -1448,33 +1448,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 454388325}
-        m_TargetAssemblyTypeName: VertexGenerator, Assembly-CSharp
-        m_MethodName: GenerateVertexes
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1841755815}
         m_TargetAssemblyTypeName: SwitchButton, Assembly-CSharp
         m_MethodName: Switch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 454388326}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
-        m_MethodName: Run
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1536,3 +1512,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unclicked: {fileID: 21300000, guid: 5aa79340660d2194d981c43a6aad5377, type: 3}
   clicked: {fileID: 21300000, guid: 729d1e6ffd9743443bcc1122af2eebde, type: 3}
+  vertexesGenerator: {fileID: 454388325}
+  timer: {fileID: 454388326}

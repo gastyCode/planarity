@@ -24,7 +24,7 @@ public class VertexesGenerator : MonoBehaviour
             Instantiate(prefab,position, Quaternion.identity);
         }
         
-        linesGenerator.CreateLines();
+        linesGenerator.CreateLines(vertexesCount);
     }
 
     private void DestroyAllVertexes()
