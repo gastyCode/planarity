@@ -12,5 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e106fefa93337f4ba61daf527646da4, type: 3}
   m_Name: PlanarGraph1
   m_EditorClassIdentifier: 
-  level: 0
-  positions: []
+  level: 1
+  positions:
+  - {x: 0, y: 3}
+  - {x: 0, y: 0}
+  - {x: -5, y: -2}
+  - {x: 5, y: -2}
+  connections:
+  - {x: 1, y: 3}
+  - {x: 1, y: 4}
+  - {x: 1, y: 2}
+  - {x: 2, y: 3}
+  - {x: 2, y: 4}
+  - {x: 3, y: 4}
