@@ -31,10 +31,10 @@ public class Line : MonoBehaviour
         _lr.SetPosition(1, _vertexBPosition);
     }
 
-    public void SetLine(int vertexA, int vertexB)
+    public void SetLine(Vector2 connection)
     {
-        _vertexA = vertexA;
-        _vertexB = vertexB;
+        _vertexA = (int)connection.x - 1;
+        _vertexB = (int)connection.y - 1;
     }
 
     public Vector2 GetAPosition()

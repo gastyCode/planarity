@@ -12,15 +12,14 @@ public class LinesGenerator : MonoBehaviour
 
     private GameObject _linesCrossing;
 
-    public void CreateLines(int vertexesCount)
+    public void CreateLines(Vector2[] connections)
     {
         DestroyAllLines();
-        List<Tuple<int, int>> points = GetCombinationsOfTwo(vertexesCount);
 
-        foreach (Tuple<int, int> point in points)
+        foreach (Vector2 connection in connections)
         {
             Line line = Instantiate(prefab).GetComponent<Line>();
-            line.SetLine(point.Item1, point.Item2);
+            line.SetLine(connection);
         }
 
         _linesCrossing = Instantiate(linesCrossing);

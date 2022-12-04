@@ -7,24 +7,29 @@ using Random = System.Random;
 
 public class VertexesGenerator : MonoBehaviour
 {
+    public PlanarGraph planarGraph;
     public GameObject prefab;
     public LinesGenerator linesGenerator;
-    public int vertexesCount;
+
+    private Vector2[] _positions;
+
+    private void Start()
+    {
+        _positions = planarGraph.positions;
+    }
     
-    // Start is called before the first frame update
     public void GenerateVertexes()
     {
         DestroyAllVertexes();
         
         Random random = new Random();
-        
-        for (int i = 0; i < vertexesCount; i++)
+
+        foreach (Vector2 position in _positions)
         {
-            Vector2 position = new Vector2(random.Next(-8, 8), random.Next(-3, 4));
             Instantiate(prefab,position, Quaternion.identity);
         }
-        
-        linesGenerator.CreateLines(vertexesCount);
+
+        linesGenerator.CreateLines(planarGraph.connections);
     }
 
     private void DestroyAllVertexes()
