@@ -28,4 +28,9 @@ public class CurrentLevel : MonoBehaviour
     {
         return _planarGraph;
     }
+
+    public int GetLevel()
+    {
+        return _planarGraph.level;
+    }
 }

@@ -41,6 +41,7 @@ public class SwitchButton : MonoBehaviour
         else
         {
             denyVertexesMovement();
+            ScoreSystem.SaveData(UIController.Instance);
             timer.Stop();
         }
     }

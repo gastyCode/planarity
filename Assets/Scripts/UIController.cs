@@ -44,4 +44,9 @@ public class UIController : MonoBehaviour
         moves = 0;
         timer.ResetTimer();
     }
+
+    public int[] GetIntTime()
+    {
+        return timer.GetIntTime();
+    }
 }
