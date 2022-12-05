@@ -22,6 +22,15 @@ public class Timer : MonoBehaviour
 
         return $"{minutes.ToString("00")}:{seconds.ToString("00")}";
     }
+
+    public int[] GetIntTime()
+    {
+        int time = (int)_time;
+        int seconds = time % 60;
+        int minutes = time / 60;
+
+        return new int[] {minutes, seconds};
+    }
     
     public void ResetTimer()
     {

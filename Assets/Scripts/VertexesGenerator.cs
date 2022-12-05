@@ -7,15 +7,16 @@ using Random = System.Random;
 
 public class VertexesGenerator : MonoBehaviour
 {
-    public PlanarGraph planarGraph;
     public GameObject prefab;
     public LinesGenerator linesGenerator;
 
+    private PlanarGraph _planarGraph;
     private Vector2[] _positions;
 
     private void Start()
     {
-        _positions = planarGraph.positions;
+        _planarGraph = CurrentLevel.Instance.GetGraph();
+        _positions = _planarGraph.positions;
     }
     
     public void GenerateVertexes()
@@ -29,7 +30,7 @@ public class VertexesGenerator : MonoBehaviour
             Instantiate(prefab,position, Quaternion.identity);
         }
 
-        linesGenerator.CreateLines(planarGraph.connections);
+        linesGenerator.CreateLines(_planarGraph.connections);
     }
 
     private void DestroyAllVertexes()
