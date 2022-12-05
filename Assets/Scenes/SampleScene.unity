@@ -453,9 +453,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74cee56f0408336429c73dde92073468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planarGraph: {fileID: 11400000, guid: 0dd53e9a154baed41a7d661117e827f4, type: 2}
   prefab: {fileID: 3365509407094680334, guid: 322546ff5bc194947bb122be7dd94c8b, type: 3}
   linesGenerator: {fileID: 454388323}
-  vertexesCount: 5
 --- !u!114 &454388326
 MonoBehaviour:
   m_ObjectHideFlags: 0
