@@ -5,11 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject mainSection;
+    public GameObject startSection;
 
-    public void START() {
+    public void START()
+    {
+        mainSection.SetActive(false);
+        startSection.SetActive(true);
+    }
+
+    public void START_LEVEL()
+    {
         SceneManager.LoadScene(0);
     }
-    public void EXIT() {
+
+    public void BACK()
+    {
+        mainSection.SetActive(true);
+        startSection.SetActive(false);
+    }
+    
+    public void EXIT()
+    {
         Application.Quit();
     }
 }

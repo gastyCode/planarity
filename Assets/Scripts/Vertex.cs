@@ -29,7 +29,10 @@ public class Vertex : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        transform.position = GetMousePosition() + _mousePositionOffset;
+        if (_isMovable)
+        {
+            transform.position = GetMousePosition() + _mousePositionOffset;
+        }
     }
 
     public void SetMovable(bool isMovable)
