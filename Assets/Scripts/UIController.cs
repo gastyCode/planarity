@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -43,6 +44,11 @@ public class UIController : MonoBehaviour
         score = 0;
         moves = 0;
         timer.ResetTimer();
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public int[] GetIntTime()
