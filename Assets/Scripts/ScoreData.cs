@@ -23,7 +23,7 @@ public class ScoreData
     {
         Score = uiController.score;
         Moves = uiController.moves;
-        Time = uiController.time;
+        Time = uiController.GetTime();
         IntTime = uiController.GetIntTime();
     }
 
