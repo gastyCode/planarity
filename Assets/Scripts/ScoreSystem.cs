@@ -11,7 +11,7 @@ public class ScoreSystem
     public static void SaveData(UIController uiController)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        String path = Application.persistentDataPath + $"data{CurrentLevel.Instance.GetLevel()}.bin";
+        String path = Application.persistentDataPath + $"/data{CurrentLevel.Instance.GetLevel()}.bin";
 
         ScoreData data = new ScoreData(UIController.Instance);
         
@@ -21,7 +21,7 @@ public class ScoreSystem
             
             data = data.Compare(savedData);
         }
-
+        
         FileStream file = new FileStream(path, FileMode.Create);
         
         formatter.Serialize(file, data);
@@ -30,7 +30,7 @@ public class ScoreSystem
 
     public static ScoreData LoadData(int level)
     {
-        String path = Application.persistentDataPath + $"data{level}.bin";
+        String path = Application.persistentDataPath + $"/data{level}.bin";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -49,7 +49,7 @@ public class ScoreSystem
     
     private static ScoreData LoadData()
     {
-        String path = Application.persistentDataPath + $"data{CurrentLevel.Instance.GetLevel()}.bin";
+        String path = Application.persistentDataPath + $"/data{CurrentLevel.Instance.GetLevel()}.bin";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
