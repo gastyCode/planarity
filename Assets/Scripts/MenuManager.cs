@@ -16,7 +16,7 @@ public class MenuManager : MonoBehaviour
 
     public void START_LEVEL()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void BACK()
