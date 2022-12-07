@@ -51,6 +51,11 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public string GetTime()
+    {
+        return timer.GetTime();
+    }
+    
     public int[] GetIntTime()
     {
         return timer.GetIntTime();
