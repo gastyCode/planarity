@@ -1,0 +1,124 @@
+\hypertarget{class_line}{}\doxysection{Line Class Reference}
+\label{class_line}\index{Line@{Line}}
+
+
+A class that is used to create a line between two points.   
+
+
+Inheritance diagram for Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_line}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_line_a65074438e3611c83506bc8f155bea271}{Set\+Line}} (Vector2 connection)
+\item 
+Vector2 \mbox{\hyperlink{class_line_acd3114172ab474d10998004e53ced1f9}{Get\+APosition}} ()
+\item 
+Vector2 \mbox{\hyperlink{class_line_a89c73d41e9a6178f349c30a4dadd9a26}{Get\+BPosition}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_line_a59fd753ccb62b669322f039a8c0ecbef}{Start}} ()
+\begin{DoxyCompactList}\small\item\em We get the Line\+Renderer component and set the vertex positions to zero  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_line_a2e16b07f28419a946eb86e5b4ea4826a}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Find all the vertexes in the scene, then set the line renderer\textquotesingle{}s positions to the actual positions of the vertexes every update cycle.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Line\+Renderer \mbox{\hyperlink{class_line_a0e77b4e8795a9e688cc70cf32973e650}{\+\_\+lr}}
+\item 
+int \mbox{\hyperlink{class_line_ad7365585da748204b19dd8b0074b3a20}{\+\_\+vertexA}}
+\item 
+int \mbox{\hyperlink{class_line_a34d664c865fb14f331c4368315700600}{\+\_\+vertexB}}
+\item 
+Vector2 \mbox{\hyperlink{class_line_a91f0e3db5ebbb619002ec0f6ae1fc259}{\+\_\+vertex\+APosition}}
+\item 
+Vector2 \mbox{\hyperlink{class_line_a6b60a05ed1940cafee839258571ec007}{\+\_\+vertex\+BPosition}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that is used to create a line between two points.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_line_acd3114172ab474d10998004e53ced1f9}\label{class_line_acd3114172ab474d10998004e53ced1f9}} 
+\index{Line@{Line}!GetAPosition@{GetAPosition}}
+\index{GetAPosition@{GetAPosition}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{GetAPosition()}{GetAPosition()}}
+{\footnotesize\ttfamily Vector2 Line.\+Get\+APosition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_line_a89c73d41e9a6178f349c30a4dadd9a26}\label{class_line_a89c73d41e9a6178f349c30a4dadd9a26}} 
+\index{Line@{Line}!GetBPosition@{GetBPosition}}
+\index{GetBPosition@{GetBPosition}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{GetBPosition()}{GetBPosition()}}
+{\footnotesize\ttfamily Vector2 Line.\+Get\+BPosition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_line_a65074438e3611c83506bc8f155bea271}\label{class_line_a65074438e3611c83506bc8f155bea271}} 
+\index{Line@{Line}!SetLine@{SetLine}}
+\index{SetLine@{SetLine}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{SetLine()}{SetLine()}}
+{\footnotesize\ttfamily void Line.\+Set\+Line (\begin{DoxyParamCaption}\item[{Vector2}]{connection }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_line_a59fd753ccb62b669322f039a8c0ecbef}\label{class_line_a59fd753ccb62b669322f039a8c0ecbef}} 
+\index{Line@{Line}!Start@{Start}}
+\index{Start@{Start}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Line.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+We get the Line\+Renderer component and set the vertex positions to zero  
+
+\mbox{\Hypertarget{class_line_a2e16b07f28419a946eb86e5b4ea4826a}\label{class_line_a2e16b07f28419a946eb86e5b4ea4826a}} 
+\index{Line@{Line}!Update@{Update}}
+\index{Update@{Update}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Line.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find all the vertexes in the scene, then set the line renderer\textquotesingle{}s positions to the actual positions of the vertexes every update cycle.  
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_line_a0e77b4e8795a9e688cc70cf32973e650}\label{class_line_a0e77b4e8795a9e688cc70cf32973e650}} 
+\index{Line@{Line}!\_lr@{\_lr}}
+\index{\_lr@{\_lr}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{\_lr}{\_lr}}
+{\footnotesize\ttfamily Line\+Renderer Line.\+\_\+lr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_line_ad7365585da748204b19dd8b0074b3a20}\label{class_line_ad7365585da748204b19dd8b0074b3a20}} 
+\index{Line@{Line}!\_vertexA@{\_vertexA}}
+\index{\_vertexA@{\_vertexA}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{\_vertexA}{\_vertexA}}
+{\footnotesize\ttfamily int Line.\+\_\+vertexA\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_line_a91f0e3db5ebbb619002ec0f6ae1fc259}\label{class_line_a91f0e3db5ebbb619002ec0f6ae1fc259}} 
+\index{Line@{Line}!\_vertexAPosition@{\_vertexAPosition}}
+\index{\_vertexAPosition@{\_vertexAPosition}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{\_vertexAPosition}{\_vertexAPosition}}
+{\footnotesize\ttfamily Vector2 Line.\+\_\+vertex\+APosition\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_line_a34d664c865fb14f331c4368315700600}\label{class_line_a34d664c865fb14f331c4368315700600}} 
+\index{Line@{Line}!\_vertexB@{\_vertexB}}
+\index{\_vertexB@{\_vertexB}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{\_vertexB}{\_vertexB}}
+{\footnotesize\ttfamily int Line.\+\_\+vertexB\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_line_a6b60a05ed1940cafee839258571ec007}\label{class_line_a6b60a05ed1940cafee839258571ec007}} 
+\index{Line@{Line}!\_vertexBPosition@{\_vertexBPosition}}
+\index{\_vertexBPosition@{\_vertexBPosition}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{\_vertexBPosition}{\_vertexBPosition}}
+{\footnotesize\ttfamily Vector2 Line.\+\_\+vertex\+BPosition\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_line_8cs}{Line.\+cs}}\end{DoxyCompactItemize}

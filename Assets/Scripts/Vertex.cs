@@ -5,6 +5,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static LinesCrossing;
 
+/// <summary>
+/// A class that is used to create a vertex object.
+/// </summary>
 public class Vertex : MonoBehaviour
 {
     private Vector3 _mousePositionOffset;
@@ -16,6 +19,11 @@ public class Vertex : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
     
+    /// <summary>
+    /// When the mouse is clicked on the game object, if the game object is movable, then the game object's start position
+    /// is set to the game object's current position, and the mouse position offset is set to the game object's current
+    /// position minus the mouse position
+    /// </summary>
     private void OnMouseDown()
     {
         if (_isMovable)
@@ -27,6 +35,9 @@ public class Vertex : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// If the object is movable, then move the object to the mouse position plus the mouse position offset
+    /// </summary>
     private void OnMouseDrag()
     {
         if (_isMovable)

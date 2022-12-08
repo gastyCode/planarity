@@ -1,0 +1,100 @@
+\hypertarget{class_vertex}{}\doxysection{Vertex Class Reference}
+\label{class_vertex}\index{Vertex@{Vertex}}
+
+
+A class that is used to create a vertex object.   
+
+
+Inheritance diagram for Vertex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_vertex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_vertex_ac74c085700b535ba47a5092f8affd05d}{Set\+Movable}} (bool is\+Movable)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_vertex_ad3a761707f5102ac77bc2a3c8fb7cc02}{Get\+Mouse\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_vertex_a6fc8e22b7b8260e72c770e97afe3ae3f}{On\+Mouse\+Down}} ()
+\begin{DoxyCompactList}\small\item\em When the mouse is clicked on the game object, if the game object is movable, then the game object\textquotesingle{}s start position is set to the game object\textquotesingle{}s current position, and the mouse position offset is set to the game object\textquotesingle{}s current position minus the mouse position  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_a4d4c1703026182561100d0ea7124f4f1}{On\+Mouse\+Drag}} ()
+\begin{DoxyCompactList}\small\item\em If the object is movable, then move the object to the mouse position plus the mouse position offset  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_vertex_ac7af869237e6e90f8b066268e7db29f9}{\+\_\+mouse\+Position\+Offset}}
+\item 
+Vector3 \mbox{\hyperlink{class_vertex_a1b631d9f7ecdf12c1fd6404faa35bf30}{\+\_\+start\+Position}}
+\item 
+Boolean \mbox{\hyperlink{class_vertex_acea5f1fbadaff4815fe2e18e1a42b6c6}{\+\_\+is\+Movable}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that is used to create a vertex object.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vertex_ad3a761707f5102ac77bc2a3c8fb7cc02}\label{class_vertex_ad3a761707f5102ac77bc2a3c8fb7cc02}} 
+\index{Vertex@{Vertex}!GetMousePosition@{GetMousePosition}}
+\index{GetMousePosition@{GetMousePosition}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{GetMousePosition()}{GetMousePosition()}}
+{\footnotesize\ttfamily Vector3 Vertex.\+Get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_vertex_a6fc8e22b7b8260e72c770e97afe3ae3f}\label{class_vertex_a6fc8e22b7b8260e72c770e97afe3ae3f}} 
+\index{Vertex@{Vertex}!OnMouseDown@{OnMouseDown}}
+\index{OnMouseDown@{OnMouseDown}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{OnMouseDown()}{OnMouseDown()}}
+{\footnotesize\ttfamily void Vertex.\+On\+Mouse\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+When the mouse is clicked on the game object, if the game object is movable, then the game object\textquotesingle{}s start position is set to the game object\textquotesingle{}s current position, and the mouse position offset is set to the game object\textquotesingle{}s current position minus the mouse position  
+
+\mbox{\Hypertarget{class_vertex_a4d4c1703026182561100d0ea7124f4f1}\label{class_vertex_a4d4c1703026182561100d0ea7124f4f1}} 
+\index{Vertex@{Vertex}!OnMouseDrag@{OnMouseDrag}}
+\index{OnMouseDrag@{OnMouseDrag}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{OnMouseDrag()}{OnMouseDrag()}}
+{\footnotesize\ttfamily void Vertex.\+On\+Mouse\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If the object is movable, then move the object to the mouse position plus the mouse position offset  
+
+\mbox{\Hypertarget{class_vertex_ac74c085700b535ba47a5092f8affd05d}\label{class_vertex_ac74c085700b535ba47a5092f8affd05d}} 
+\index{Vertex@{Vertex}!SetMovable@{SetMovable}}
+\index{SetMovable@{SetMovable}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{SetMovable()}{SetMovable()}}
+{\footnotesize\ttfamily void Vertex.\+Set\+Movable (\begin{DoxyParamCaption}\item[{bool}]{is\+Movable }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_vertex_acea5f1fbadaff4815fe2e18e1a42b6c6}\label{class_vertex_acea5f1fbadaff4815fe2e18e1a42b6c6}} 
+\index{Vertex@{Vertex}!\_isMovable@{\_isMovable}}
+\index{\_isMovable@{\_isMovable}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{\_isMovable}{\_isMovable}}
+{\footnotesize\ttfamily Boolean Vertex.\+\_\+is\+Movable = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_vertex_ac7af869237e6e90f8b066268e7db29f9}\label{class_vertex_ac7af869237e6e90f8b066268e7db29f9}} 
+\index{Vertex@{Vertex}!\_mousePositionOffset@{\_mousePositionOffset}}
+\index{\_mousePositionOffset@{\_mousePositionOffset}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{\_mousePositionOffset}{\_mousePositionOffset}}
+{\footnotesize\ttfamily Vector3 Vertex.\+\_\+mouse\+Position\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_vertex_a1b631d9f7ecdf12c1fd6404faa35bf30}\label{class_vertex_a1b631d9f7ecdf12c1fd6404faa35bf30}} 
+\index{Vertex@{Vertex}!\_startPosition@{\_startPosition}}
+\index{\_startPosition@{\_startPosition}!Vertex@{Vertex}}
+\doxysubsubsection{\texorpdfstring{\_startPosition}{\_startPosition}}
+{\footnotesize\ttfamily Vector3 Vertex.\+\_\+start\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_vertex_8cs}{Vertex.\+cs}}\end{DoxyCompactItemize}

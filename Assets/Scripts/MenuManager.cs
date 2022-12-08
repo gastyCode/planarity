@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Class that manages buttons in menu.
+/// </summary>
 public class MenuManager : MonoBehaviour
 {
     public GameObject mainSection;

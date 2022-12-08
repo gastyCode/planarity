@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A class that is used to create a line between two points.
+/// </summary>
 public class Line : MonoBehaviour
 {
     private LineRenderer _lr;
@@ -10,8 +13,10 @@ public class Line : MonoBehaviour
     private int _vertexB;
     private Vector2 _vertexAPosition;
     private Vector2 _vertexBPosition;
-
-    // Start is called before the first frame update
+    
+    /// <summary>
+    /// We get the LineRenderer component and set the vertex positions to zero
+    /// </summary>
     void Start()
     {
         _lr = GetComponent<LineRenderer>();
@@ -20,6 +25,10 @@ public class Line : MonoBehaviour
         _vertexBPosition = Vector2.zero;
     }
 
+    /// <summary>
+    /// Find all the vertexes in the scene, then set the line renderer's positions to the actual positions of
+    /// the vertexes every update cycle.
+    /// </summary>
     private void Update()
     {
         GameObject[] vertexes = GameObject.FindGameObjectsWithTag("Vertex");

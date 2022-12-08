@@ -1,0 +1,106 @@
+\hypertarget{class_lines_crossing}{}\doxysection{Lines\+Crossing Class Reference}
+\label{class_lines_crossing}\index{LinesCrossing@{LinesCrossing}}
+
+
+A class that scans intersections of the lines.   
+
+
+Inheritance diagram for Lines\+Crossing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lines_crossing}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lines_crossing_a9c2ecaadd6e80b217b5c3ca10e156a69}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_lines_crossing_a2c0e70b93c8453cda105769f582ba5ef}{Update}} ()
+\begin{DoxyCompactList}\small\item\em For each combination of lines, check if they intersect and if they do, add the intersection point to a list. Then count intersection points and send it to the \mbox{\hyperlink{class_u_i_controller}{UIController}}.  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lines_crossing_a287b91675ab7984b398c592d0ad51521}{On\+Draw\+Gizmos}} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+For each position in the list of positions, draw a red sphere at that position.\char`\"{} \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_lines_crossing_ab62b2475b819918c95b340093f0178ae}{Late\+Start}} (float wait\+Time)
+\begin{DoxyCompactList}\small\item\em It waits for a certain amount of time, then it creates a list of combinations of two lines, and a list of positions  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_lines_crossing_aaa97f74495ce3125cec0d2897ae32df9}{\+\_\+intersections}} = 0
+\item 
+List$<$ Tuple$<$ int, int $>$ $>$ \mbox{\hyperlink{class_lines_crossing_afe0d253a8d604398c5726e0d88d7ccb8}{\+\_\+combinations}}
+\item 
+List$<$ Vector2 $>$ \mbox{\hyperlink{class_lines_crossing_a25b7b1005c635106b64a59e72ecef3bf}{\+\_\+positions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that scans intersections of the lines.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lines_crossing_ab62b2475b819918c95b340093f0178ae}\label{class_lines_crossing_ab62b2475b819918c95b340093f0178ae}} 
+\index{LinesCrossing@{LinesCrossing}!LateStart@{LateStart}}
+\index{LateStart@{LateStart}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{LateStart()}{LateStart()}}
+{\footnotesize\ttfamily IEnumerator Lines\+Crossing.\+Late\+Start (\begin{DoxyParamCaption}\item[{float}]{wait\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+It waits for a certain amount of time, then it creates a list of combinations of two lines, and a list of positions  
+
+
+\begin{DoxyParams}{Parameters}
+{\em wait\+Time} & The time to wait before starting the script.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lines_crossing_a287b91675ab7984b398c592d0ad51521}\label{class_lines_crossing_a287b91675ab7984b398c592d0ad51521}} 
+\index{LinesCrossing@{LinesCrossing}!OnDrawGizmos@{OnDrawGizmos}}
+\index{OnDrawGizmos@{OnDrawGizmos}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{OnDrawGizmos()}{OnDrawGizmos()}}
+{\footnotesize\ttfamily void Lines\+Crossing.\+On\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\char`\"{}\+For each position in the list of positions, draw a red sphere at that position.\char`\"{} 
+
+Now, if you run the game, you\textquotesingle{}ll see a bunch of red spheres in the scene view  \mbox{\Hypertarget{class_lines_crossing_a9c2ecaadd6e80b217b5c3ca10e156a69}\label{class_lines_crossing_a9c2ecaadd6e80b217b5c3ca10e156a69}} 
+\index{LinesCrossing@{LinesCrossing}!Start@{Start}}
+\index{Start@{Start}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Lines\+Crossing.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_lines_crossing_a2c0e70b93c8453cda105769f582ba5ef}\label{class_lines_crossing_a2c0e70b93c8453cda105769f582ba5ef}} 
+\index{LinesCrossing@{LinesCrossing}!Update@{Update}}
+\index{Update@{Update}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Lines\+Crossing.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+For each combination of lines, check if they intersect and if they do, add the intersection point to a list. Then count intersection points and send it to the \mbox{\hyperlink{class_u_i_controller}{UIController}}.  
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lines_crossing_afe0d253a8d604398c5726e0d88d7ccb8}\label{class_lines_crossing_afe0d253a8d604398c5726e0d88d7ccb8}} 
+\index{LinesCrossing@{LinesCrossing}!\_combinations@{\_combinations}}
+\index{\_combinations@{\_combinations}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{\_combinations}{\_combinations}}
+{\footnotesize\ttfamily List$<$Tuple$<$int, int$>$ $>$ Lines\+Crossing.\+\_\+combinations\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_lines_crossing_aaa97f74495ce3125cec0d2897ae32df9}\label{class_lines_crossing_aaa97f74495ce3125cec0d2897ae32df9}} 
+\index{LinesCrossing@{LinesCrossing}!\_intersections@{\_intersections}}
+\index{\_intersections@{\_intersections}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{\_intersections}{\_intersections}}
+{\footnotesize\ttfamily int Lines\+Crossing.\+\_\+intersections = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_lines_crossing_a25b7b1005c635106b64a59e72ecef3bf}\label{class_lines_crossing_a25b7b1005c635106b64a59e72ecef3bf}} 
+\index{LinesCrossing@{LinesCrossing}!\_positions@{\_positions}}
+\index{\_positions@{\_positions}!LinesCrossing@{LinesCrossing}}
+\doxysubsubsection{\texorpdfstring{\_positions}{\_positions}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Lines\+Crossing.\+\_\+positions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_lines_crossing_8cs}{Lines\+Crossing.\+cs}}\end{DoxyCompactItemize}

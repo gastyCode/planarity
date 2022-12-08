@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+/// <summary>
+/// A container class that stores the score, moves, and time of a game.
+/// </summary>
 [System.Serializable]
 public class ScoreData
 {
@@ -27,6 +30,13 @@ public class ScoreData
         IntTime = uiController.GetIntTime();
     }
 
+    /// <summary>
+    /// Compare two ScoreData types and returns the greater one.
+    /// </summary>
+    /// <param name="ScoreData">The score data to compare to.</param>
+    /// <returns>
+    /// The score data that is better.
+    /// </returns>
     public ScoreData Compare(ScoreData compareData)
     {
         if (Score > compareData.Score)
