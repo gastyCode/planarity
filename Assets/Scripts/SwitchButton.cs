@@ -4,6 +4,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// A class that is used to switch the state of the button.
+/// </summary>
 public class SwitchButton : MonoBehaviour
 {
     public Sprite unclicked;
@@ -27,6 +30,9 @@ public class SwitchButton : MonoBehaviour
         _button.sprite = _isClicked ? clicked : unclicked;
     }
 
+    /// <summary>
+    /// It's a function that switches the button state between "clicked" and "unclicked"
+    /// </summary>
     public void Switch()
     {
         _isClicked = !_isClicked;
@@ -40,13 +46,16 @@ public class SwitchButton : MonoBehaviour
         }
         else
         {
-            denyVertexesMovement();
+            DenyVertexesMovement();
             ScoreSystem.SaveData(UIController.Instance);
             timer.Stop();
         }
     }
 
-    private void denyVertexesMovement()
+    /// <summary>
+    /// It finds all the vertexes in the scene and sets their movable property to false
+    /// </summary>
+    private void DenyVertexesMovement()
     {
         GameObject[] vertexes = GameObject.FindGameObjectsWithTag("Vertex");
         

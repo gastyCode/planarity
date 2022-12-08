@@ -5,6 +5,9 @@ using System.Linq;
 using UnityEngine;
 using Random = System.Random;
 
+/// <summary>
+/// A class that generates vertexes.
+/// </summary>
 public class VertexesGenerator : MonoBehaviour
 {
     public GameObject prefab;
@@ -13,12 +16,18 @@ public class VertexesGenerator : MonoBehaviour
     private PlanarGraph _planarGraph;
     private Vector2[] _positions;
 
+    /// <summary>
+    /// > The `Start()` function gets the graph from the current level and stores it in a variable
+    /// </summary>
     private void Start()
     {
         _planarGraph = CurrentLevel.Instance.GetGraph();
         _positions = _planarGraph.positions;
     }
     
+    /// <summary>
+    /// It destroys all the vertexes, then creates new ones at the positions specified in the PlanarGraph object
+    /// </summary>
     public void GenerateVertexes()
     {
         DestroyAllVertexes();
@@ -33,6 +42,9 @@ public class VertexesGenerator : MonoBehaviour
         linesGenerator.CreateLines(_planarGraph.connections);
     }
 
+    /// <summary>
+    /// It finds all the vertexes in the scene and destroys them
+    /// </summary>
     private void DestroyAllVertexes()
     {
         GameObject[] vertexes = GameObject.FindGameObjectsWithTag("Vertex");

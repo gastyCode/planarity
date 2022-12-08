@@ -1,0 +1,134 @@
+\hypertarget{class_math2_d}{}\doxysection{Math2D Class Reference}
+\label{class_math2_d}\index{Math2D@{Math2D}}
+
+
+A class that contains static methods for mathematical calculations.   
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static long \mbox{\hyperlink{class_math2_d_a9887a7372053f093ffb0c274263eeb36}{Factorial\+Of}} (int number)
+\begin{DoxyCompactList}\small\item\em It takes a number, and returns the factorial of that number  \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_math2_d_a2d26bfcde454b9d1834d333cbcba25c3}{Is\+Line\+Intersecting}} (Vector2 v1, Vector2 v2, Vector2 v3, Vector2 v4, out Vector2 intersection)
+\begin{DoxyCompactList}\small\item\em If the lines intersect, return true and the intersection point. Otherwise, return false  \end{DoxyCompactList}\item 
+static List$<$ Tuple$<$ int, int $>$ $>$ \mbox{\hyperlink{class_math2_d_a5f9efcb631cee439c9dd6190a593e4a4}{Get\+Combinations\+Of\+Two}} (int elements\+Count)
+\begin{DoxyCompactList}\small\item\em It generates a list of all possible combinations of two numbers from 1 to {\ttfamily elements\+Count} without repeating the same combination twice  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Tuple$<$ int, int $>$ \mbox{\hyperlink{class_math2_d_a820ba358c0a8f12db14578e7b49e6264}{Get\+Random\+Two\+Numbers}} (int range)
+\begin{DoxyCompactList}\small\item\em It generates two random numbers between 0 and the range, and returns them as a tuple  \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{class_math2_d_a7bf3606736bc45029936ed2acb83a8a6}{Combinations\+Count}} (int elements\+Count, int group\+Length)
+\begin{DoxyCompactList}\small\item\em The number of combinations of n elements, taken k at a time, is n! / (k! $\ast$ (n -\/ k)!)  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that contains static methods for mathematical calculations.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_math2_d_a7bf3606736bc45029936ed2acb83a8a6}\label{class_math2_d_a7bf3606736bc45029936ed2acb83a8a6}} 
+\index{Math2D@{Math2D}!CombinationsCount@{CombinationsCount}}
+\index{CombinationsCount@{CombinationsCount}!Math2D@{Math2D}}
+\doxysubsubsection{\texorpdfstring{CombinationsCount()}{CombinationsCount()}}
+{\footnotesize\ttfamily static long Math2\+D.\+Combinations\+Count (\begin{DoxyParamCaption}\item[{int}]{elements\+Count,  }\item[{int}]{group\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The number of combinations of n elements, taken k at a time, is n! / (k! $\ast$ (n -\/ k)!)  
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements\+Count} & The number of elements in the set.\\
+\hline
+{\em group\+Length} & The length of the group of elements you want to find the combinations of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of combinations of elements\+Count elements, taken group\+Length at a time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_math2_d_a9887a7372053f093ffb0c274263eeb36}\label{class_math2_d_a9887a7372053f093ffb0c274263eeb36}} 
+\index{Math2D@{Math2D}!FactorialOf@{FactorialOf}}
+\index{FactorialOf@{FactorialOf}!Math2D@{Math2D}}
+\doxysubsubsection{\texorpdfstring{FactorialOf()}{FactorialOf()}}
+{\footnotesize\ttfamily static long Math2\+D.\+Factorial\+Of (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+It takes a number, and returns the factorial of that number  
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & The number to calculate the factorial of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The factorial of the number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_math2_d_a5f9efcb631cee439c9dd6190a593e4a4}\label{class_math2_d_a5f9efcb631cee439c9dd6190a593e4a4}} 
+\index{Math2D@{Math2D}!GetCombinationsOfTwo@{GetCombinationsOfTwo}}
+\index{GetCombinationsOfTwo@{GetCombinationsOfTwo}!Math2D@{Math2D}}
+\doxysubsubsection{\texorpdfstring{GetCombinationsOfTwo()}{GetCombinationsOfTwo()}}
+{\footnotesize\ttfamily static List$<$ Tuple$<$ int, int $>$ $>$ Math2\+D.\+Get\+Combinations\+Of\+Two (\begin{DoxyParamCaption}\item[{int}]{elements\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+It generates a list of all possible combinations of two numbers from 1 to {\ttfamily elements\+Count} without repeating the same combination twice  
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements\+Count} & The number of elements in the set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of tuples of two numbers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_math2_d_a820ba358c0a8f12db14578e7b49e6264}\label{class_math2_d_a820ba358c0a8f12db14578e7b49e6264}} 
+\index{Math2D@{Math2D}!GetRandomTwoNumbers@{GetRandomTwoNumbers}}
+\index{GetRandomTwoNumbers@{GetRandomTwoNumbers}!Math2D@{Math2D}}
+\doxysubsubsection{\texorpdfstring{GetRandomTwoNumbers()}{GetRandomTwoNumbers()}}
+{\footnotesize\ttfamily static Tuple$<$ int, int $>$ Math2\+D.\+Get\+Random\+Two\+Numbers (\begin{DoxyParamCaption}\item[{int}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+It generates two random numbers between 0 and the range, and returns them as a tuple  
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & The range of numbers to choose from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A tuple of two random numbers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_math2_d_a2d26bfcde454b9d1834d333cbcba25c3}\label{class_math2_d_a2d26bfcde454b9d1834d333cbcba25c3}} 
+\index{Math2D@{Math2D}!IsLineIntersecting@{IsLineIntersecting}}
+\index{IsLineIntersecting@{IsLineIntersecting}!Math2D@{Math2D}}
+\doxysubsubsection{\texorpdfstring{IsLineIntersecting()}{IsLineIntersecting()}}
+{\footnotesize\ttfamily static bool Math2\+D.\+Is\+Line\+Intersecting (\begin{DoxyParamCaption}\item[{Vector2}]{v1,  }\item[{Vector2}]{v2,  }\item[{Vector2}]{v3,  }\item[{Vector2}]{v4,  }\item[{out Vector2}]{intersection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If the lines intersect, return true and the intersection point. Otherwise, return false  
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & First vector of first line.\\
+\hline
+{\em v2} & Second vector of first line.\\
+\hline
+{\em v3} & First vector of second line.\\
+\hline
+{\em v4} & Second vector of second line.\\
+\hline
+{\em intersection} & Saves the point of intersection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean value. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_math2_d_8cs}{Math2\+D.\+cs}}\end{DoxyCompactItemize}

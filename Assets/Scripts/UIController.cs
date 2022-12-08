@@ -5,6 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// A class that is used to control the UI as a singleton.
+/// </summary>
 public class UIController : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
@@ -30,8 +33,10 @@ public class UIController : MonoBehaviour
             Instance = this;
         }
     }
-
-    // Update is called once per frame
+    
+    /// <summary>
+    /// Update the score, moves, and time text
+    /// </summary>
     void Update()
     {
         scoreText.text = score.ToString();
@@ -51,11 +56,23 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    /// <summary>
+    /// It returns the time that the timer is currently at
+    /// </summary>
+    /// <returns>
+    /// The time that the timer is currently at.
+    /// </returns>
     public string GetTime()
     {
         return timer.GetTime();
     }
     
+    /// <summary>
+    /// This function returns the current time as an array of integers
+    /// </summary>
+    /// <returns>
+    /// An array of integers.
+    /// </returns>
     public int[] GetIntTime()
     {
         return timer.GetIntTime();

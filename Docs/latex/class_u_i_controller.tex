@@ -1,0 +1,172 @@
+\hypertarget{class_u_i_controller}{}\doxysection{UIController Class Reference}
+\label{class_u_i_controller}\index{UIController@{UIController}}
+
+
+A class that is used to control the UI as a singleton.   
+
+
+Inheritance diagram for UIController\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_i_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_controller_aece2c6b80babc3bcbbf13f874bc42303}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_u_i_controller_a25667996b19acad89708f5882d803897}{Back\+To\+Menu}} ()
+\item 
+string \mbox{\hyperlink{class_u_i_controller_a4709f132495ce4dc2dfd59428947aead}{Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em It returns the time that the timer is currently at  \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_u_i_controller_aa0d6381e38b70ca0fb498f6e009f3cba}{Get\+Int\+Time}} ()
+\begin{DoxyCompactList}\small\item\em This function returns the current time as an array of integers  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_controller_aab423775ddd6df44920f3d8fde4837f8}{score\+Text}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_controller_a9e53d1db6c234c9b7752b2c06aba9305}{moves\+Text}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_u_i_controller_af7435aca94c9ca1676b06a3557b02758}{time\+Text}}
+\item 
+int \mbox{\hyperlink{class_u_i_controller_a8cca6d3f1aee858d74eef5bd8f1846d2}{score}}
+\item 
+int \mbox{\hyperlink{class_u_i_controller_a5c0f2b87dc8cca480a2a43738a36519a}{moves}}
+\item 
+String \mbox{\hyperlink{class_u_i_controller_a2de62bd5d945afc1dda39ad1281bea42}{time}} = \char`\"{}00\+:00\char`\"{}
+\item 
+\mbox{\hyperlink{class_timer}{Timer}} \mbox{\hyperlink{class_u_i_controller_a1efb946c6640315ba9796bbce1ac3182}{timer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_u_i_controller}{UIController}} \mbox{\hyperlink{class_u_i_controller_af261ab10ebbb6d82e2565b2ada209f25}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_u_i_controller_ab1853922923ea143f0e27d10425a3adb}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_u_i_controller_adc5b0854a26bbcd71cc33274960bd0a9}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update the score, moves, and time text  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that is used to control the UI as a singleton.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_i_controller_ab1853922923ea143f0e27d10425a3adb}\label{class_u_i_controller_ab1853922923ea143f0e27d10425a3adb}} 
+\index{UIController@{UIController}!Awake@{Awake}}
+\index{Awake@{Awake}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void UIController.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_u_i_controller_a25667996b19acad89708f5882d803897}\label{class_u_i_controller_a25667996b19acad89708f5882d803897}} 
+\index{UIController@{UIController}!BackToMenu@{BackToMenu}}
+\index{BackToMenu@{BackToMenu}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{BackToMenu()}{BackToMenu()}}
+{\footnotesize\ttfamily void UIController.\+Back\+To\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_u_i_controller_aa0d6381e38b70ca0fb498f6e009f3cba}\label{class_u_i_controller_aa0d6381e38b70ca0fb498f6e009f3cba}} 
+\index{UIController@{UIController}!GetIntTime@{GetIntTime}}
+\index{GetIntTime@{GetIntTime}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{GetIntTime()}{GetIntTime()}}
+{\footnotesize\ttfamily int\mbox{[}$\,$\mbox{]} UIController.\+Get\+Int\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function returns the current time as an array of integers  
+
+\begin{DoxyReturn}{Returns}
+An array of integers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_i_controller_a4709f132495ce4dc2dfd59428947aead}\label{class_u_i_controller_a4709f132495ce4dc2dfd59428947aead}} 
+\index{UIController@{UIController}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily string UIController.\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It returns the time that the timer is currently at  
+
+\begin{DoxyReturn}{Returns}
+The time that the timer is currently at. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_i_controller_aece2c6b80babc3bcbbf13f874bc42303}\label{class_u_i_controller_aece2c6b80babc3bcbbf13f874bc42303}} 
+\index{UIController@{UIController}!Reset@{Reset}}
+\index{Reset@{Reset}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void UIController.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_u_i_controller_adc5b0854a26bbcd71cc33274960bd0a9}\label{class_u_i_controller_adc5b0854a26bbcd71cc33274960bd0a9}} 
+\index{UIController@{UIController}!Update@{Update}}
+\index{Update@{Update}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void UIController.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the score, moves, and time text  
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_u_i_controller_a5c0f2b87dc8cca480a2a43738a36519a}\label{class_u_i_controller_a5c0f2b87dc8cca480a2a43738a36519a}} 
+\index{UIController@{UIController}!moves@{moves}}
+\index{moves@{moves}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{moves}{moves}}
+{\footnotesize\ttfamily int UIController.\+moves}
+
+\mbox{\Hypertarget{class_u_i_controller_a9e53d1db6c234c9b7752b2c06aba9305}\label{class_u_i_controller_a9e53d1db6c234c9b7752b2c06aba9305}} 
+\index{UIController@{UIController}!movesText@{movesText}}
+\index{movesText@{movesText}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{movesText}{movesText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIController.\+moves\+Text}
+
+\mbox{\Hypertarget{class_u_i_controller_a8cca6d3f1aee858d74eef5bd8f1846d2}\label{class_u_i_controller_a8cca6d3f1aee858d74eef5bd8f1846d2}} 
+\index{UIController@{UIController}!score@{score}}
+\index{score@{score}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int UIController.\+score}
+
+\mbox{\Hypertarget{class_u_i_controller_aab423775ddd6df44920f3d8fde4837f8}\label{class_u_i_controller_aab423775ddd6df44920f3d8fde4837f8}} 
+\index{UIController@{UIController}!scoreText@{scoreText}}
+\index{scoreText@{scoreText}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{scoreText}{scoreText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIController.\+score\+Text}
+
+\mbox{\Hypertarget{class_u_i_controller_a2de62bd5d945afc1dda39ad1281bea42}\label{class_u_i_controller_a2de62bd5d945afc1dda39ad1281bea42}} 
+\index{UIController@{UIController}!time@{time}}
+\index{time@{time}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily String UIController.\+time = \char`\"{}00\+:00\char`\"{}}
+
+\mbox{\Hypertarget{class_u_i_controller_a1efb946c6640315ba9796bbce1ac3182}\label{class_u_i_controller_a1efb946c6640315ba9796bbce1ac3182}} 
+\index{UIController@{UIController}!timer@{timer}}
+\index{timer@{timer}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_timer}{Timer}} UIController.\+timer}
+
+\mbox{\Hypertarget{class_u_i_controller_af7435aca94c9ca1676b06a3557b02758}\label{class_u_i_controller_af7435aca94c9ca1676b06a3557b02758}} 
+\index{UIController@{UIController}!timeText@{timeText}}
+\index{timeText@{timeText}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{timeText}{timeText}}
+{\footnotesize\ttfamily Text\+Mesh\+Pro\+UGUI UIController.\+time\+Text}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_u_i_controller_af261ab10ebbb6d82e2565b2ada209f25}\label{class_u_i_controller_af261ab10ebbb6d82e2565b2ada209f25}} 
+\index{UIController@{UIController}!Instance@{Instance}}
+\index{Instance@{Instance}!UIController@{UIController}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_u_i_controller}{UIController}} UIController.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_u_i_controller_8cs}{UIController.\+cs}}\end{DoxyCompactItemize}

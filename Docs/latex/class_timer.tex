@@ -1,0 +1,114 @@
+\hypertarget{class_timer}{}\doxysection{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+
+
+Class that serves as a timer.   
+
+
+Inheritance diagram for Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_timer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_timer_a666eb8be8e29ab766324942aa144a2dd}{Get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em It takes the time in seconds, converts it to minutes and seconds, and returns it as a string  \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_timer_af31499f7a1fd3aa67414ae9ba5fabdc3}{Get\+Int\+Time}} ()
+\begin{DoxyCompactList}\small\item\em It takes the time in seconds, converts it to minutes and seconds, and returns an array of integers  \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_timer_a6c0c2f65f08bcc652c9f2be9a6481495}{Reset\+Timer}} ()
+\item 
+void \mbox{\hyperlink{class_timer_a883c2b67505c2e3dba56915d5cf9cc07}{Run}} ()
+\item 
+void \mbox{\hyperlink{class_timer_abd6454fc5a2bad2f2af9afdcdfb9ae22}{Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_timer_ac2c16f9aa88f2d3e7df7785545578f27}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_timer_ab138c54a3ae8f7d8bdf533e7f5323b84}{\+\_\+time}} = 0
+\item 
+Boolean \mbox{\hyperlink{class_timer_a5ea1611983c46986af05e0f1710db6e5}{\+\_\+is\+Stopped}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that serves as a timer.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_timer_af31499f7a1fd3aa67414ae9ba5fabdc3}\label{class_timer_af31499f7a1fd3aa67414ae9ba5fabdc3}} 
+\index{Timer@{Timer}!GetIntTime@{GetIntTime}}
+\index{GetIntTime@{GetIntTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{GetIntTime()}{GetIntTime()}}
+{\footnotesize\ttfamily int\mbox{[}$\,$\mbox{]} Timer.\+Get\+Int\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It takes the time in seconds, converts it to minutes and seconds, and returns an array of integers  
+
+\begin{DoxyReturn}{Returns}
+An array of integers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_timer_a666eb8be8e29ab766324942aa144a2dd}\label{class_timer_a666eb8be8e29ab766324942aa144a2dd}} 
+\index{Timer@{Timer}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily String Timer.\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It takes the time in seconds, converts it to minutes and seconds, and returns it as a string  
+
+\begin{DoxyReturn}{Returns}
+A string with the format \char`\"{}00\+:00\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_timer_a6c0c2f65f08bcc652c9f2be9a6481495}\label{class_timer_a6c0c2f65f08bcc652c9f2be9a6481495}} 
+\index{Timer@{Timer}!ResetTimer@{ResetTimer}}
+\index{ResetTimer@{ResetTimer}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{ResetTimer()}{ResetTimer()}}
+{\footnotesize\ttfamily void Timer.\+Reset\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_timer_a883c2b67505c2e3dba56915d5cf9cc07}\label{class_timer_a883c2b67505c2e3dba56915d5cf9cc07}} 
+\index{Timer@{Timer}!Run@{Run}}
+\index{Run@{Run}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Timer.\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_timer_abd6454fc5a2bad2f2af9afdcdfb9ae22}\label{class_timer_abd6454fc5a2bad2f2af9afdcdfb9ae22}} 
+\index{Timer@{Timer}!Stop@{Stop}}
+\index{Stop@{Stop}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Timer.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_timer_ac2c16f9aa88f2d3e7df7785545578f27}\label{class_timer_ac2c16f9aa88f2d3e7df7785545578f27}} 
+\index{Timer@{Timer}!Update@{Update}}
+\index{Update@{Update}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Timer.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_timer_a5ea1611983c46986af05e0f1710db6e5}\label{class_timer_a5ea1611983c46986af05e0f1710db6e5}} 
+\index{Timer@{Timer}!\_isStopped@{\_isStopped}}
+\index{\_isStopped@{\_isStopped}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{\_isStopped}{\_isStopped}}
+{\footnotesize\ttfamily Boolean Timer.\+\_\+is\+Stopped = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_timer_ab138c54a3ae8f7d8bdf533e7f5323b84}\label{class_timer_ab138c54a3ae8f7d8bdf533e7f5323b84}} 
+\index{Timer@{Timer}!\_time@{\_time}}
+\index{\_time@{\_time}!Timer@{Timer}}
+\doxysubsubsection{\texorpdfstring{\_time}{\_time}}
+{\footnotesize\ttfamily float Timer.\+\_\+time = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_timer_8cs}{Timer.\+cs}}\end{DoxyCompactItemize}

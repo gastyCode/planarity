@@ -1,0 +1,127 @@
+\hypertarget{class_switch_button}{}\doxysection{Switch\+Button Class Reference}
+\label{class_switch_button}\index{SwitchButton@{SwitchButton}}
+
+
+A class that is used to switch the state of the button.   
+
+
+Inheritance diagram for Switch\+Button\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_switch_button}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_switch_button_a6ef9db727d3c48366b046311d54cd22e}{Switch}} ()
+\begin{DoxyCompactList}\small\item\em It\textquotesingle{}s a function that switches the button state between \char`\"{}clicked\char`\"{} and \char`\"{}unclicked\char`\"{}  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Sprite \mbox{\hyperlink{class_switch_button_a3d798fffc02dfd925db4cb99199c8264}{unclicked}}
+\item 
+Sprite \mbox{\hyperlink{class_switch_button_a85febcf2907752699c3669c02496d0f2}{clicked}}
+\item 
+\mbox{\hyperlink{class_vertexes_generator}{Vertexes\+Generator}} \mbox{\hyperlink{class_switch_button_a63ce7e1a5e5fbab6975a39cbf508fdd3}{vertexes\+Generator}}
+\item 
+\mbox{\hyperlink{class_timer}{Timer}} \mbox{\hyperlink{class_switch_button_a7efe2037a81de520c531690e84766354}{timer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_switch_button_aef0a26d2f246ecb9fe93321b0c36a4a1}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_switch_button_a3ff6d9cd376549f75669a667da835818}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_switch_button_a35b4c4e03145849c2eac7ec62b1e3bb8}{Deny\+Vertexes\+Movement}} ()
+\begin{DoxyCompactList}\small\item\em It finds all the vertexes in the scene and sets their movable property to false  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Image \mbox{\hyperlink{class_switch_button_ab5acd8d78d7f1d8631782386ed7e45e6}{\+\_\+button}}
+\item 
+bool \mbox{\hyperlink{class_switch_button_a31ae553184481485e2d7b82045d41111}{\+\_\+is\+Clicked}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that is used to switch the state of the button.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_switch_button_a35b4c4e03145849c2eac7ec62b1e3bb8}\label{class_switch_button_a35b4c4e03145849c2eac7ec62b1e3bb8}} 
+\index{SwitchButton@{SwitchButton}!DenyVertexesMovement@{DenyVertexesMovement}}
+\index{DenyVertexesMovement@{DenyVertexesMovement}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{DenyVertexesMovement()}{DenyVertexesMovement()}}
+{\footnotesize\ttfamily void Switch\+Button.\+Deny\+Vertexes\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+It finds all the vertexes in the scene and sets their movable property to false  
+
+\mbox{\Hypertarget{class_switch_button_aef0a26d2f246ecb9fe93321b0c36a4a1}\label{class_switch_button_aef0a26d2f246ecb9fe93321b0c36a4a1}} 
+\index{SwitchButton@{SwitchButton}!Start@{Start}}
+\index{Start@{Start}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Switch\+Button.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_switch_button_a6ef9db727d3c48366b046311d54cd22e}\label{class_switch_button_a6ef9db727d3c48366b046311d54cd22e}} 
+\index{SwitchButton@{SwitchButton}!Switch@{Switch}}
+\index{Switch@{Switch}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{Switch()}{Switch()}}
+{\footnotesize\ttfamily void Switch\+Button.\+Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+It\textquotesingle{}s a function that switches the button state between \char`\"{}clicked\char`\"{} and \char`\"{}unclicked\char`\"{}  
+
+\mbox{\Hypertarget{class_switch_button_a3ff6d9cd376549f75669a667da835818}\label{class_switch_button_a3ff6d9cd376549f75669a667da835818}} 
+\index{SwitchButton@{SwitchButton}!Update@{Update}}
+\index{Update@{Update}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Switch\+Button.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_switch_button_ab5acd8d78d7f1d8631782386ed7e45e6}\label{class_switch_button_ab5acd8d78d7f1d8631782386ed7e45e6}} 
+\index{SwitchButton@{SwitchButton}!\_button@{\_button}}
+\index{\_button@{\_button}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{\_button}{\_button}}
+{\footnotesize\ttfamily Image Switch\+Button.\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_switch_button_a31ae553184481485e2d7b82045d41111}\label{class_switch_button_a31ae553184481485e2d7b82045d41111}} 
+\index{SwitchButton@{SwitchButton}!\_isClicked@{\_isClicked}}
+\index{\_isClicked@{\_isClicked}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{\_isClicked}{\_isClicked}}
+{\footnotesize\ttfamily bool Switch\+Button.\+\_\+is\+Clicked = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_switch_button_a85febcf2907752699c3669c02496d0f2}\label{class_switch_button_a85febcf2907752699c3669c02496d0f2}} 
+\index{SwitchButton@{SwitchButton}!clicked@{clicked}}
+\index{clicked@{clicked}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{clicked}{clicked}}
+{\footnotesize\ttfamily Sprite Switch\+Button.\+clicked}
+
+\mbox{\Hypertarget{class_switch_button_a7efe2037a81de520c531690e84766354}\label{class_switch_button_a7efe2037a81de520c531690e84766354}} 
+\index{SwitchButton@{SwitchButton}!timer@{timer}}
+\index{timer@{timer}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_timer}{Timer}} Switch\+Button.\+timer}
+
+\mbox{\Hypertarget{class_switch_button_a3d798fffc02dfd925db4cb99199c8264}\label{class_switch_button_a3d798fffc02dfd925db4cb99199c8264}} 
+\index{SwitchButton@{SwitchButton}!unclicked@{unclicked}}
+\index{unclicked@{unclicked}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{unclicked}{unclicked}}
+{\footnotesize\ttfamily Sprite Switch\+Button.\+unclicked}
+
+\mbox{\Hypertarget{class_switch_button_a63ce7e1a5e5fbab6975a39cbf508fdd3}\label{class_switch_button_a63ce7e1a5e5fbab6975a39cbf508fdd3}} 
+\index{SwitchButton@{SwitchButton}!vertexesGenerator@{vertexesGenerator}}
+\index{vertexesGenerator@{vertexesGenerator}!SwitchButton@{SwitchButton}}
+\doxysubsubsection{\texorpdfstring{vertexesGenerator}{vertexesGenerator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertexes_generator}{Vertexes\+Generator}} Switch\+Button.\+vertexes\+Generator}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_switch_button_8cs}{Switch\+Button.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_score_system}{}\doxysection{Score\+System Class Reference}
+\label{class_score_system}\index{ScoreSystem@{ScoreSystem}}
+
+
+A class that is used to save and load data.   
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_score_system_a3ee5ce1e4efe8d7f7f7bb87f341ea3f9}{Save\+Data}} (\mbox{\hyperlink{class_u_i_controller}{UIController}} ui\+Controller)
+\begin{DoxyCompactList}\small\item\em It creates a new file in the persistent data path of the application, and saves the data to it  \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_score_data}{Score\+Data}} \mbox{\hyperlink{class_score_system_ac960520322e7e33889693498a3fbd4c8}{Load\+Data}} (int level)
+\begin{DoxyCompactList}\small\item\em If the file exists, open it, deserialize it, and return the data. If the file doesn\textquotesingle{}t exist, return a new \mbox{\hyperlink{class_score_data}{Score\+Data}} object  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_score_data}{Score\+Data}} \mbox{\hyperlink{class_score_system_a6a055aed0de143e89381e29d488277e2}{Load\+Data}} ()
+\begin{DoxyCompactList}\small\item\em If the file exists, open it, deserialize it, and return the data. If the file doesn\textquotesingle{}t exist, create a new \mbox{\hyperlink{class_score_data}{Score\+Data}} object and return it  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that is used to save and load data.  
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_score_system_a6a055aed0de143e89381e29d488277e2}\label{class_score_system_a6a055aed0de143e89381e29d488277e2}} 
+\index{ScoreSystem@{ScoreSystem}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!ScoreSystem@{ScoreSystem}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_score_data}{Score\+Data}} Score\+System.\+Load\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+If the file exists, open it, deserialize it, and return the data. If the file doesn\textquotesingle{}t exist, create a new \mbox{\hyperlink{class_score_data}{Score\+Data}} object and return it  
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_score_data}{Score\+Data}} object from current level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_system_ac960520322e7e33889693498a3fbd4c8}\label{class_score_system_ac960520322e7e33889693498a3fbd4c8}} 
+\index{ScoreSystem@{ScoreSystem}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!ScoreSystem@{ScoreSystem}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_score_data}{Score\+Data}} Score\+System.\+Load\+Data (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+If the file exists, open it, deserialize it, and return the data. If the file doesn\textquotesingle{}t exist, return a new \mbox{\hyperlink{class_score_data}{Score\+Data}} object  
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The level you want to load the data from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_score_data}{Score\+Data}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_score_system_a3ee5ce1e4efe8d7f7f7bb87f341ea3f9}\label{class_score_system_a3ee5ce1e4efe8d7f7f7bb87f341ea3f9}} 
+\index{ScoreSystem@{ScoreSystem}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!ScoreSystem@{ScoreSystem}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily static void Score\+System.\+Save\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_u_i_controller}{UIController}}}]{ui\+Controller }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+It creates a new file in the persistent data path of the application, and saves the data to it  
+
+
+\begin{DoxyParams}{Parameters}
+{\em ui\+Controller} & The \mbox{\hyperlink{class_u_i_controller}{UIController}} class that holds the score and time data.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\mbox{\hyperlink{_score_system_8cs}{Score\+System.\+cs}}\end{DoxyCompactItemize}
